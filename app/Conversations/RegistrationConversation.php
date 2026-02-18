@@ -16,11 +16,9 @@ use App\DTOs\UserRegistrationDTO;
  */
 class RegistrationConversation extends Conversation
 {
-    /** @var string */
-    protected $name;
+    protected string $name;
 
-    /** @var string */
-    protected $programmingLanguage;
+    protected string $programmingLanguage;
 
     public function __construct(
         protected UserRepository|null $userRepository = null,
